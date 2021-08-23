@@ -25,6 +25,7 @@ export function render(vinyls) {
         h4,
         img,
         genreP,
+        priceP
 
     );
     return li;
