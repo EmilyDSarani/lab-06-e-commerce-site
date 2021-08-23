@@ -29,7 +29,30 @@ main {
 	align-items: center;
 	margin-bottom: calc(var(--footer-height));
 }
-  
+h1 {
+    display: grid;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  a{
+    display: grid;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    cursor: pointer;
+  }
+a:visited {
+    color: #04fd9e;
+}
+a:hover {
+    color: #300cfc;
+    transition:ease-in-out .5s;
+}
+
 .vinyls {
     border: solid 1px black;
     border-radius: 5px;
