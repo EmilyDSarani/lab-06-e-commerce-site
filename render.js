@@ -8,14 +8,14 @@ export function render(vinyls) {
 
     
     li.classList.add('vinyls');
-    h3.classList.add('vinyl-artist');
-    h4.classList.add('vinyl-albumn');
+    h3.classList.add('vinyl-name');
+    h4.classList.add('vinyl-album');
     img.classList.add('vinyl-image');
     genreP.classList.add('genre');
     priceP.classList.add('price');
 
-    h3.textContent = vinyls.artist;
-    h4.textContent = vinyls.albumn;
+    h3.textContent = vinyls.name;
+    h4.textContent = vinyls.album;
     img.src = vinyls.image;
     genreP.textContent = `a ${vinyls.genre} album for ${vinyls.genre} lovers`;
     priceP.textContent = `$${vinyls.price}`;
