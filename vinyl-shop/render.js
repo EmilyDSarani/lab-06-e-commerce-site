@@ -8,7 +8,7 @@ export function render(vinyls) {
     const punP = document.createElement('p');
     const button = document.createElement ('button');
 
-    button.addEventListener('click', (event) => {
+    button.addEventListener('click', () => {
         alert(vinyls.name);
     });
     button.textContent = 'Add item';
