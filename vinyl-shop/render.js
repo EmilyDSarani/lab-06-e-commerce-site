@@ -35,7 +35,6 @@ export function render(vinyls) {
         img,
         genreP,
         priceP,
-        punP,
         button
 
     );
