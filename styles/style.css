@@ -35,12 +35,14 @@ h1 {
 	justify-content: center;
 	align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: right;
+    margin: 10px;
+    background-color: rgb(225, 233, 250);
 }
-.gif {
-    display: flex;
-	align-items: center;
 
-}
   a{
     display: grid;
 	flex-direction: row;
@@ -49,9 +51,15 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
     cursor: pointer;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: right;
+    margin: 10px;
+    background-color: rgb(250, 250, 226);
   }
 a:visited {
-    color: #04fd9e;
+    color: #034e31;
 }
 a:hover {
     color: #300cfc;
