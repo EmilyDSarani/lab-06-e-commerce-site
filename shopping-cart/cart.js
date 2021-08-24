@@ -1,7 +1,7 @@
-import { renderTable } from './render-table';
-import { cartID } from './cart-data';
+import { renderTable } from './render-table.js';
+import { cartID } from './cart-data.js';
 
-const tBody = document.querySelector('body');
+const tBody = document.getElementById('body');
 
 for (let item of cartID){
     const tr = renderTable(item);

@@ -14,8 +14,5 @@ export const cartID = [
     { id: 4,
         quantity: 1
             
-    },
-
-
-
+    }
 ];
