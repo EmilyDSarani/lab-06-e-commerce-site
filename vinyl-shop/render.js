@@ -6,8 +6,12 @@ export function render(vinyls) {
     const genreP = document.createElement('p');
     const priceP = document.createElement('p');
     const punP = document.createElement('p');
+    const button = document.createElement ('button');
 
-    
+    button.addEventListener('click', (event) => {
+        alert(vinyls.name);
+    });
+    button.textContent = 'Add item';
     li.classList.add('vinyls');
     h3.classList.add('vinyl-name');
     h4.classList.add('vinyl-album');
@@ -31,7 +35,8 @@ export function render(vinyls) {
         img,
         genreP,
         priceP,
-        punP
+        punP,
+        button
 
     );
     return li;

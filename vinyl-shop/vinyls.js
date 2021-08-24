@@ -1,5 +1,5 @@
-import { musicVinyls } from '../data.js';
-import { render } from '../render.js';
+import { musicVinyls } from './data.js';
+import { render } from './render.js';
 
 const ul = document.getElementById('vinyl');
 
