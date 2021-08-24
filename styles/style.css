@@ -79,3 +79,8 @@ a:hover {
 .vinyls img {
     width: 320px;
 }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
