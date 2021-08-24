@@ -84,3 +84,24 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
+
+table{
+    width: 95%;
+    height: 25px;
+    text-align: center;
+    border:solid black 2px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+tr{
+    background-color: rgb(105, 48, 48);
+    color: white;
+}
+tr:nth-child(even){
+  background-color: rgb(0, 63, 105);
+  color:white
+}
+th{
+    background-color: rgb(228, 221, 129);
+    color:rgb(0, 0, 0);
+    font-size: medium;
+}

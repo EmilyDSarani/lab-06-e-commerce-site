@@ -15,5 +15,5 @@ test('renderTable should have the right code for HTML', (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.deepEqual(actual.outerHTML, expected);
 });
