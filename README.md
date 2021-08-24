@@ -9,7 +9,7 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
-Start-
+Day 1: The Product
 Create a folder filled with your product stuff
 
 HTML for Products-
@@ -37,3 +37,20 @@ Then I'll do this another few times
 
 CSS:
 I will go through and put borders and style it all.. I am not exactly sure what I want yet...
+
+Day 2: The Cart
+Need to create a folder labeled cart. In this folder there needs to be cart-data.js, cart.js, index.html and render-table-rows.js. 
+
+cart-data.js: This will have the array, i think. Like the export const cart= thing that is in the 
+cart.js: this is where you import a lot of stuff. Like- the cart-data, render-table, and the data. This is also where I'll code the loops. 
+render-table:import the utils and data to this one. This is also where I will....render...the table...like in the render.js. Buuuuut use td, tr instead...then do something with the price and quantity here, probably multiply them. 
+index- set up the the table. This table will need to probably have like... the name of the product, the price, how much the user will buy, and the total. Look up a table form online. 
+
+out of the folder, create a utils then pop this code in it that is super important for living:  
+export function findById(myArray, id) {
+    for (let item of myArray){
+      if (item.id === id){
+        return item
+      }
+    }
+}
