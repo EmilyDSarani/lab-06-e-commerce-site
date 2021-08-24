@@ -67,6 +67,7 @@ a:hover {
 }
 
 .vinyls {
+	justify-content: center;
     border: solid 1px rgb(0, 0, 0);
     border-radius: 15px;
     padding: 20px;

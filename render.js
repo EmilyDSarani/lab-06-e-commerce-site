@@ -5,6 +5,7 @@ export function render(vinyls) {
     const img = document.createElement('img');
     const genreP = document.createElement('p');
     const priceP = document.createElement('p');
+    const punP = document.createElement('p');
 
     
     li.classList.add('vinyls');
@@ -13,19 +14,24 @@ export function render(vinyls) {
     img.classList.add('vinyl-image');
     genreP.classList.add('genre');
     priceP.classList.add('price');
+    punP.classList.add('pun');
+    
 
     h3.textContent = vinyls.name;
     h4.textContent = vinyls.album;
     img.src = vinyls.image;
     genreP.textContent = `a ${vinyls.genre} album for ${vinyls.genre} lovers`;
     priceP.textContent = `$${vinyls.price}`;
+    punP.textContent = `${vinyls.pun}`;
+
 
     li.append(
         h3,
         h4,
         img,
         genreP,
-        priceP
+        priceP,
+        punP
 
     );
     return li;
