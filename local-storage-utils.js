@@ -1,6 +1,7 @@
 import { findById } from './utils.js';
 //please note that local storage only knows strings. That is why we have to go through this procress to turn an array into a string the back. 
 const CART = 'CART';
+// Dani mentioned doing this in passing so I put it in my notes. I think they said it was because it would catch any spelling errors, vs a string wouldnt. 
 
 export function getCart(){
     const stringyCart = localStorage.getItem(CART);
@@ -35,6 +36,6 @@ export function addTooCart(someId){
     setCart(currentCart);
 }
 //In this process we are using both of the functions. This is the...loop? conditions? 
-//we take the getCart, which is what we used to go from string to JS objects and we are taking it through the storage so that when the user
-//clicks the 'add item' from the button we created in the vinyl-render page, then it will add how ever many of that item the user clicks
+//we take the getCart, which is what we used to go from string to JS objects and we are taking it through the storage so that when the user--
+//clicks the 'add item' from the button we created in the vinyl-render page, then it will add how ever many of that item the user clicks--
 // and take it through the storage. The setCart will read the currentCart and translate it for the button to work on a different html index. 
