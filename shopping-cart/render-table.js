@@ -19,12 +19,14 @@ export function renderTable(cartItem)
 
     totalTd.textContent = total.toLocaleString('en-US', { style:'currency', currency:'USD' });
    
-    
+
     tr.append(nameTd, priceTd, quantityTd, totalTd);
     
     return tr;
 
 }
+
+// move the bottom functions into their own file next time to clean up the code. 
 function getTotal(price, quantity){
     const total = price * quantity;
     return total;
