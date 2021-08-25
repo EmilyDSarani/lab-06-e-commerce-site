@@ -8,12 +8,14 @@ export function renderTable(cartItem)
     const priceTd = document.createElement('td');
     const quantityTd = document.createElement('td');
     const totalTd = document.createElement ('td');
+    
 
     const product = findById(musicVinyls, cartItem.id);
     nameTd.textContent = product.name,
     priceTd.textContent = product.price.toLocaleString('en-US', { style:'currency', currency:'USD' });
     quantityTd.textContent = cartItem.quantity;
     const total = getTotal (product.price, cartItem.quantity);
+    
 
     totalTd.textContent = total.toLocaleString('en-US', { style:'currency', currency:'USD' });
    
@@ -27,3 +29,14 @@ function getTotal(price, quantity){
     return total;
 }
 
+export function cartTotal(allProducts, wholeCart){
+    let accumulator = 0;
+    for (let item of wholeCart){
+
+        const product = findById(allProducts, item.id);
+
+        const total = product.price * item.quantity;
+        accumulator = accumulator + total;
+    }
+    return accumulator.toLocaleString('en-US', { style:'currency', currency:'USD' });
+}
