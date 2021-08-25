@@ -19,6 +19,7 @@ export function renderTable(cartItem)
 
     totalTd.textContent = total.toLocaleString('en-US', { style:'currency', currency:'USD' });
    
+    
     tr.append(nameTd, priceTd, quantityTd, totalTd);
     
     return tr;
@@ -39,4 +40,6 @@ export function cartTotal(allProducts, wholeCart){
         accumulator = accumulator + total;
     }
     return accumulator.toLocaleString('en-US', { style:'currency', currency:'USD' });
+
+
 }
