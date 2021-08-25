@@ -11,9 +11,14 @@
     // Call the function you're testing and set the result to a const
     //const actual = renderTable({
      //   id:1,
+     //name: 'ACDC',
+      //  album: 'POWER UP',
+      //  image: 'https://images-na.ssl-images-amazon.com/images/I/61TgQZI-gqL._SL1500_.jpg',
+      //  price: 25,
+      //  genre: 'Rock',
    //     quantity: 2 });
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    //expect.deepEqual(actual.outerHTML, expected);
+    //expect.equal(actual.outerHTML, expected);
 //});
