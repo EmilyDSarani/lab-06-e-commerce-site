@@ -11,7 +11,7 @@ export function renderTable(cartItem)
     
 
     const product = findById(musicVinyls, cartItem.id);
-    nameTd.textContent = product.name,
+    nameTd.textContent = product.name;
     priceTd.textContent = product.price.toLocaleString('en-US', { style:'currency', currency:'USD' });
     quantityTd.textContent = cartItem.quantity;
     const total = getTotal (product.price, cartItem.quantity);

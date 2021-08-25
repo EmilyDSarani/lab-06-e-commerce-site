@@ -1,3 +1,5 @@
+import { addTooCart } from '../local-storage-utils.js';
+
 export function render(vinyls) {
     const li = document.createElement('li');
     const h3 = document.createElement('h3');
@@ -9,7 +11,9 @@ export function render(vinyls) {
     const button = document.createElement ('button');
 
     button.addEventListener('click', () => {
-        alert(vinyls.name);
+        alert(`${vinyls.pun}`);
+        addTooCart(vinyls.id);
+
     });
     button.textContent = 'Add item';
     li.classList.add('vinyls');
