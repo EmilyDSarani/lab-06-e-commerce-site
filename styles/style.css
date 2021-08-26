@@ -116,7 +116,11 @@ th{
     
 }
 .Carti{
-    background-color: rgb(184, 176, 176);
+    background-image: url("https://images.pexels.com/photos/5632370/pexels-photo-5632370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 900px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 .musica{
     background-color: rgb(216, 238, 236);
@@ -140,4 +144,12 @@ button{
 button:hover{
     color:red;
     transition:ease-in-out .2s;
+}
+.picture{
+    width: 100%;
+    height:auto;
+}
+.tinycart{
+    width:25%;
+    height: auto;
 }
