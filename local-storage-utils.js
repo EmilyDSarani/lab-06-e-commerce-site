@@ -41,14 +41,14 @@ export function addTooCart(someId){
 // and take it through the storage. The setCart will read the currentCart and translate it for the button to work on a different html index. 
 
 export function clearCart(){
-    const cart = setCart();
+    const cart = getCart();
     const stringyCart = JSON.stringify(cart, true, 2);
     alert(stringyCart);
     localStorage.removeItem(CART);
     window.location = '../index.html';
 
 }
-// So, the setCart is pulling the array that we nee to the forefront. Then we are taking that function and turning it into a string so that it can be read.
+// So, the getCart is pulling the array that we nee to the forefront. Then we are taking that function and turning it into a string so that it can be read.
 // then, on the alert it will read that button click (right, this is going to be a button btw), and send an alert with the array. 
 // Dani said the true, 2 makes it prettier--i am not actually sure what it means. They mentioned it in class and I didn't write it down fast enough.
 // the last bit will remove the items from the cart and take the user back to homepage. 
