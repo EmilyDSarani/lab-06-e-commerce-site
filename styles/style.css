@@ -29,6 +29,9 @@ main {
 	align-items: center;
 	margin-bottom: calc(var(--footer-height));
 }
+.main-menu{
+    background-color: rgb(6, 73, 100);
+}
 h1 {
     display: flex;
 	flex-direction: row;
@@ -40,7 +43,8 @@ h1 {
     padding: 20px;
     text-align: right;
     margin: 10px;
-    background-color: rgb(225, 233, 250);
+    background-color: rgb(1, 36, 110);
+    color: white;
 }
 
   a{
@@ -56,7 +60,7 @@ h1 {
     padding: 20px;
     text-align: right;
     margin: 10px;
-    background-color: rgb(250, 250, 226);
+    background-color: rgb(255, 255, 255);
   }
 a:visited {
     color: #034e31;

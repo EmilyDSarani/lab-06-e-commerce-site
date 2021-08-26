@@ -1,5 +1,5 @@
 import { renderTable, cartTotal } from './render-table.js';
-import { getCart } from '../local-storage-utils.js';
+import { getCart, clearCart } from '../local-storage-utils.js';
 import { musicVinyls } from '../data.js';
 
 const cartFinal = getCart();
@@ -12,6 +12,10 @@ for (let item of cartFinal){
 }
 
 const total = cartTotal(musicVinyls, cartFinal);
-
+const button = document.querySelector('#checkout');
 const totalTd = document.querySelector('#wholetotal');
 totalTd.textContent = total;
+
+button.addEventListener('click', () => {
+    clearCart();
+});

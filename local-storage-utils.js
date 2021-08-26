@@ -39,3 +39,17 @@ export function addTooCart(someId){
 //we take the getCart, which is what we used to go from string to JS objects and we are taking it through the storage so that when the user--
 //clicks the 'add item' from the button we created in the vinyl-render page, then it will add how ever many of that item the user clicks--
 // and take it through the storage. The setCart will read the currentCart and translate it for the button to work on a different html index. 
+
+export function clearCart(){
+    const cart = setCart();
+    const stringyCart = JSON.stringify(cart, true, 2);
+    alert(stringyCart);
+    localStorage.removeItem(CART);
+    window.location = '../index.html';
+
+}
+// So, the setCart is pulling the array that we nee to the forefront. Then we are taking that function and turning it into a string so that it can be read.
+// then, on the alert it will read that button click (right, this is going to be a button btw), and send an alert with the array. 
+// Dani said the true, 2 makes it prettier--i am not actually sure what it means. They mentioned it in class and I didn't write it down fast enough.
+// the last bit will remove the items from the cart and take the user back to homepage. 
+// this will go to cart.js with getCart
