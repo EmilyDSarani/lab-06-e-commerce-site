@@ -15,7 +15,7 @@ export function render(vinyls) {
         addTooCart(vinyls.id);
 
     });
-    button.textContent = 'Add item';
+    button.textContent = 'This One!';
     li.classList.add('vinyls');
     h3.classList.add('vinyl-name');
     h4.classList.add('vinyl-album');

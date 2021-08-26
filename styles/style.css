@@ -110,8 +110,17 @@ th{
     font-size: medium;
 }
 #wholetotal{
-    background-color: rgb(228, 221, 129);
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(235, 241, 204);
     align-items: left;
     
+}
+.Carti{
+    background-color: rgb(184, 176, 176);
+}
+.musica{
+    background-color: rgb(216, 238, 236);
+}
+#checkout{
+    cursor: pointer;
 }
